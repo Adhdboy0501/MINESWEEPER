@@ -20,43 +20,47 @@ Profiles include the username and a profile picture, which can be updated or dis
 
 * Number of Games Won is tracked using an SQL database.
 
+
 ### 2. Multiple Difficulty Levels
 
-The game supports three levels of difficulty:
+#### The game supports three levels of difficulty:
 
-Easy: Smaller board with fewer mines.
+* Easy: Smaller board with fewer mines.
 
-Medium: Medium-sized board with more mines.
+* Medium: Medium-sized board with more mines.
 
-Hard: Large board with the highest number of mines.
+* Hard: Large board with the highest number of mines.
+
 
 ### 3. Themes
 
-Users can switch between multiple themes, including:
+#### Users can switch between multiple themes, including:
 
-Default
+* Default
 
-Lavender Haze
+* Lavender Haze
 
-Sunflower
+* Sunflower
 
-Aurora
+* Aurora
 
-Batman
+* Batman
 
-Storm
+* Storm
 
 Themes dynamically change the colors of the blocks, background, and hover effects.
 
+
 ### 4. Game Mechanics
 
-Left-Click: Reveals the block. If it's a mine, the game is lost.
+* Left-Click: Reveals the block. If it's a mine, the game is lost.
 
-Right-Click: Flags the block as a potential mine.
+* Right-Click: Flags the block as a potential mine.
 
-Win Condition: Open all non-mine blocks.
+* Win Condition: Open all non-mine blocks.
 
-Lose Condition: Click on a mine or run out of time.
+* Lose Condition: Click on a mine or run out of time.
+
 
 ### 5. Timer and Time Limit
 
@@ -64,13 +68,16 @@ A real-time timer tracks how long you take to complete a level.
 
 In Time Trial mode, a time limit is enforced, adding an extra challenge.
 
+
 ### 6. Help System
 
 A Help Button explains the rules and strategies for playing Minesweeper.
 
+
 ### 7. Leaderboard
 
 Displays the top 5 players with the best times from the SQL database.
+
 
 ## How It Works
 
@@ -86,11 +93,11 @@ A "Profile" button displays the user’s stats and top leaderboard players.
 
 The game uses a MySQL database (userdata) to store user information.
 
-Tables:
+#### Tables:
 
-data: Stores user IDs and usernames.
+* data: Stores user IDs and usernames.
 
-game_stats: Tracks games played, games won, and the best time for each user.
+* game_stats: Tracks games played, games won, and the best time for each user.
 
  
 ### 3. Gameplay
@@ -102,15 +109,18 @@ Mines are placed randomly, ensuring the first click is never a mine.
 
 Use logical deduction and flag blocks you suspect to contain mines.
 
+
 ### 4. Restart and Customization
 
 You can restart the game while retaining the selected difficulty and theme.
 
 The timer resets on every restart.
 
+
 ### 5. Efficiency Calculation
 
 Efficiency is calculated using the ratio of games won to total games played.
+
 
 ## How to Use
 
@@ -118,19 +128,21 @@ Efficiency is calculated using the ratio of games won to total games played.
 
 Python 3.x installed on your system.
 
+
 ### Required Python libraries:
 
-tkinter
+* tkinter
 
-mysql-connector-python
+* mysql-connector-python
 
-Pillow
+* Pillow
 
-pickle
+* pickle
 
-subprocess
+* subprocess
 
 A MySQL database set up with the required tables.
+
 
 ### Setup Instructions
 
@@ -141,6 +153,7 @@ Install the required Python libraries:
 pip install mysql-connector-python Pillow
 
 Set up the MySQL database using the provided schema.
+
 
 ### Run the game:
 
@@ -156,7 +169,9 @@ Start playing by left-clicking to reveal blocks and right-clicking to flag mines
 
 Monitor your time and use the leaderboard to track progress.
 
+
 ## File Structure
+```
 minesweeper.py:a basic game menu where u get to sign in
 sign_in.py:Helps user sign into his exsisting profile
 sign_up.py:Helps user create a profile
@@ -166,6 +181,7 @@ userdata (MySQL database): Stores user and game statistics.
 w.dat: Temporary binary file to save and load gameplay stats using pickle.
 
 leaderboard.csv: Local file for tracking scores.
+```
 
 ## Future Enhancements
 
