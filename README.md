@@ -1,25 +1,25 @@
 # Minesweeper
 
-This is an advanced Minesweeper game developed using Python and Tkinter. It includes multiple themes, difficulty levels, user profiles, and a database to track performance. The game supports efficient user management, customization, and competitive leaderboards, making it engaging and personalized.
+    This is an advanced Minesweeper game developed using Python and Tkinter. It includes multiple themes, difficulty levels, user profiles, and a database to track performance. The game supports efficient user management, customization, and competitive leaderboards, making it engaging and personalized.
 
 ## Features
 
-### 1. User Profiles
+    ### 1. User Profiles
 
-Users can create profiles by signing in through the Sign-In Screen.
+        Users can create profiles by signing in through the Sign-In Screen.
 
-Profiles include the username and a profile picture, which can be updated or displayed in the profile window.
+        Profiles include the username and a profile picture, which can be updated or displayed in the profile window.
 
-User data such as:
+        User data such as:
 
-Best Time
+        Best Time
 
-Efficiency
+        Efficiency
 
-Number of Games Played
+        Number of Games Played
 
-Number of Games Won
-is tracked using an SQL database.
+        Number of Games Won
+        is tracked using an SQL database.
 
 ### 2. Multiple Difficulty Levels
 
