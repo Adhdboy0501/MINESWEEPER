@@ -159,7 +159,7 @@ File Structure
 minesweeper.py:a basic game menu where u get to sign in
 sign_in.py:Helps user sign into his exsisting profile
 sign_up.py:Helps user create a profile
-level-final.py: Main game logic and UI.
+level_final.py: Main game logic and UI.
 text.txt: Stores the currently signed-in username.
 userdata (MySQL database): Stores user and game statistics.
 w.dat: Temporary binary file to save and load gameplay stats using pickle.

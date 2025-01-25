@@ -9,7 +9,7 @@ import pickle
 import subprocess
 # Define themes
 def get_user_name():
-    with open('text.txt','r') as f:
+    with open('src\\data\\text.txt','r') as f:
         username=f.read()
         return username
 THEMES = {
@@ -859,9 +859,3 @@ def main():
         root.mainloop()
     except Exception as e:
         messagebox.showerror("Error", f"An error occurred: {e}")
-
-
-
-
-if __name__ == '__main__':
-    main()

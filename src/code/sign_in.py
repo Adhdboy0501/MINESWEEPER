@@ -15,7 +15,7 @@ def f():
 def game():
     with open ("text.txt","w")as f:
         f.write(user.get())
-    file_path="src//code//level-final.py"
+    file_path="src//code//level_final.py"
     subprocess.Popen(file_path, creationflags=subprocess.CREATE_NO_WINDOW, shell=True)
     root.destroy()
 def sign_in():
