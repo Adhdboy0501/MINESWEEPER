@@ -4,7 +4,7 @@ This is an advanced Minesweeper game developed using Python and Tkinter. It incl
 
 ## Features
 
-* User Profiles
+### 1. User Profiles
 
 Users can create profiles by signing in through the Sign-In Screen.
 
@@ -21,7 +21,7 @@ Number of Games Played
 Number of Games Won
 is tracked using an SQL database.
 
-* Multiple Difficulty Levels
+### 2. Multiple Difficulty Levels
 
 The game supports three levels of difficulty:
 
