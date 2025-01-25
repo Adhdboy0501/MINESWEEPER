@@ -10,17 +10,16 @@ Users can create profiles by signing in through the Sign-In Screen.
 
 Profiles include the username and a profile picture, which can be updated or displayed in the profile window.
 
-User data such as:
-```
-Best Time
+#### User data such as:
+'''
+* Best Time
 
-Efficiency
+* Efficiency
 
-Number of Games Played
+* Number of Games Played
 
-Number of Games Won
-is tracked using an SQL database.
-```
+* Number of Games Won is tracked using an SQL database.
+'''
 ### 2. Multiple Difficulty Levels
 
 The game supports three levels of difficulty:
