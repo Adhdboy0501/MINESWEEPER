@@ -1,8 +1,10 @@
+# Minesweeper
+
 This is an advanced Minesweeper game developed using Python and Tkinter. It includes multiple themes, difficulty levels, user profiles, and a database to track performance. The game supports efficient user management, customization, and competitive leaderboards, making it engaging and personalized.
 
-Features
+## Features
 
-1. User Profiles
+### 1. User Profiles
 
 Users can create profiles by signing in through the Sign-In Screen.
 
@@ -19,7 +21,7 @@ Number of Games Played
 Number of Games Won
 is tracked using an SQL database.
 
-2. Multiple Difficulty Levels
+### 2. Multiple Difficulty Levels
 
 The game supports three levels of difficulty:
 
@@ -29,7 +31,7 @@ Medium: Medium-sized board with more mines.
 
 Hard: Large board with the highest number of mines.
 
-3. Themes
+### 3. Themes
 
 Users can switch between multiple themes, including:
 
@@ -47,7 +49,7 @@ Storm
 
 Themes dynamically change the colors of the blocks, background, and hover effects.
 
-4. Game Mechanics
+### 4. Game Mechanics
 
 Left-Click: Reveals the block. If it's a mine, the game is lost.
 
@@ -57,23 +59,23 @@ Win Condition: Open all non-mine blocks.
 
 Lose Condition: Click on a mine or run out of time.
 
-5. Timer and Time Limit
+### 5. Timer and Time Limit
 
 A real-time timer tracks how long you take to complete a level.
 
 In Time Trial mode, a time limit is enforced, adding an extra challenge.
 
-6. Help System
+### 6. Help System
 
 A Help Button explains the rules and strategies for playing Minesweeper.
 
-7. Leaderboard
+### 7. Leaderboard
 
 Displays the top 5 players with the best times from the SQL database.
 
-How It Works
+## How It Works
 
-1. Sign-In and Profiles
+### 1. Sign-In and Profiles
 
 Users sign in using their username (stored in a local file).
 
@@ -81,7 +83,7 @@ Profiles include efficiency and best times retrieved from the SQL database.
 
 A "Profile" button displays the user’s stats and top leaderboard players.
 
-2. SQL Database Integration
+### 2. SQL Database Integration
 
 The game uses a MySQL database (userdata) to store user information.
 
@@ -92,7 +94,7 @@ data: Stores user IDs and usernames.
 game_stats: Tracks games played, games won, and the best time for each user.
 
  
-3. Gameplay
+### 3. Gameplay
 
 After signing in, select a difficulty level and start playing.By default the 
 difficulty is set to medium.
@@ -101,23 +103,23 @@ Mines are placed randomly, ensuring the first click is never a mine.
 
 Use logical deduction and flag blocks you suspect to contain mines.
 
-4. Restart and Customization
+### 4. Restart and Customization
 
 You can restart the game while retaining the selected difficulty and theme.
 
 The timer resets on every restart.
 
-5. Efficiency Calculation
+### 5. Efficiency Calculation
 
 Efficiency is calculated using the ratio of games won to total games played.
 
-How to Use
+## How to Use
 
-Prerequisites
+### Prerequisites
 
 Python 3.x installed on your system.
 
-Required Python libraries:
+### Required Python libraries:
 
 tkinter
 
@@ -131,7 +133,7 @@ subprocess
 
 A MySQL database set up with the required tables.
 
-Setup Instructions
+### Setup Instructions
 
 Clone or download the project files.
 
@@ -141,7 +143,7 @@ pip install mysql-connector-python Pillow
 
 Set up the MySQL database using the provided schema.
 
-Run the game:
+### Run the game:
 
 python minesweeper.py
 
@@ -155,7 +157,7 @@ Start playing by left-clicking to reveal blocks and right-clicking to flag mines
 
 Monitor your time and use the leaderboard to track progress.
 
-File Structure
+## File Structure
 minesweeper.py:a basic game menu where u get to sign in
 sign_in.py:Helps user sign into his exsisting profile
 sign_up.py:Helps user create a profile
@@ -166,7 +168,7 @@ w.dat: Temporary binary file to save and load gameplay stats using pickle.
 
 leaderboard.csv: Local file for tracking scores.
 
-Future Enhancements
+## Future Enhancements
 
 Adding support for multiplayer gameplay.
 
